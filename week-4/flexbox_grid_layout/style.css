@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 2;
+  position: relative;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 18px;
+  min-height: 12rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 3rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.item-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.item-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.item-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn {
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  color: transparent;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.item-1 .btn {
+  color: hsl(31, 77%, 52%);
+  
+}
+.item-2 .btn {
+  color: hsl(184, 100%, 22%);
+}
+.item-3 .btn {
+  color: hsl(179, 100%, 13%);
+
+}
+.btn:hover {
+  background-color: transparent;
+  outline: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+
+
+a {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50px;
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 25px;
+}
+
+@media (min-width: 375px) {
+  .flex-container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 600px) {
+  .flex-container {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+  .flex-container {
+    max-width: 1024px;
+    flex-direction: row;
+  }
+
+  .flex-item {
+    gap: 1.5rem;
+    padding: 4rem;
+  }
+
+  .btn {
+    margin-top: 5rem;
+  }
+  .item-1 {
+  
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.item-3 {
+
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+}
+
+@media (min-width: 1440px) {
+  .flex-container {
+    max-width: 1200px;
+  }
+}
